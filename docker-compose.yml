@@ -6,9 +6,10 @@ services:
     privileged: true
     environment:
       - LIST_IN_DIRECTORY=0
-      - DEVICE_TYPE=RTL-SDR
-      - DEVICE_SERIAL=0x1
+      - DEVICE_TYPE=Auto
+      - DEVICE_SERIAL=0
       - BIND_PORT=5555
+      - AlLOW_CONTROL=1
     ports:
       - "5555:5555"
     image: lloydpick/spyserver:latest
